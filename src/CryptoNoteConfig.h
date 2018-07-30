@@ -14,7 +14,7 @@
 namespace CryptoNote {
 namespace parameters {
 
-const uint64_t DIFFICULTY_TARGET                             = 30; // seconds
+const uint64_t DIFFICULTY_TARGET                             = 120; // seconds
 
 const uint32_t CRYPTONOTE_MAX_BLOCK_NUMBER                   = 500000000;
 const size_t   CRYPTONOTE_MAX_BLOCK_BLOB_SIZE                = 500000000;
@@ -111,14 +111,14 @@ const uint8_t CURRENT_FORK_INDEX = 3;
 
 /* Block heights we are going to have hard forks at */
 const uint64_t FORK_HEIGHTS[] = {
-    187000,
-    350000,
-    440000,
-    620000,
-    800000,
-    1000000,
-    1200000,
-    1400000
+    //187000,
+    //350000,
+    //440000,
+    //620000,
+    //800000,
+    //1000000,
+    //1200000,
+    //1400000
 };
 
 /* Make sure CURRENT_FORK_INDEX is a valid index */
@@ -131,7 +131,7 @@ const char     P2P_NET_DATA_FILENAME[]                       = "p2pstate.bin";
 const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json";
 } // parameters
 
-const char     CRYPTONOTE_NAME[]                             = "TurtleCoin";
+const char     CRYPTONOTE_NAME[]                             = "ttlcoin";
 
 const uint8_t  TRANSACTION_VERSION_1                         =  1;
 const uint8_t  TRANSACTION_VERSION_2                         =  2;
@@ -166,9 +166,9 @@ const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT          = 5000;          //
 const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "";
 
 const char* const SEED_NODES[] = {
-  "174.138.68.141:11897", //rock
-  "145.239.88.119:11999", //cision
-  "142.44.242.106:11897", //tom
-  "165.227.252.132:11897" //iburnmycd
+  ":11897", //rock
+  //"145.239.88.119:11999", //cision
+  //"142.44.242.106:11897", //tom
+  //"165.227.252.132:11897" //iburnmycd
 };
 } // CryptoNote
